@@ -21,13 +21,13 @@ set hlsearch
 
 "-------- New File Headers --------------""
 "Create tex file header
-autocmd bufnewfile *.tex so ~/Documents/tex_header.txt 
+autocmd bufnewfile *.tex so ~/Documents/tex_template.txt 
 
 "Create c file header
-autocmd bufnewfile *.c so ~/Documents/c_header.txt
+autocmd bufnewfile *.c so ~/Documents/c_template.txt
 
 "Create c++ file header
-autocmd bufnewfile *.cpp so ~/Documents/cpp_header.txt
+autocmd bufnewfile *.cpp so ~/Documents/cpp_template.txt
 
 " Return to previous location when reopening a file
 if has("autocmd")
