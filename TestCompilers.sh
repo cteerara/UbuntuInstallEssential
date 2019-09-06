@@ -2,7 +2,6 @@
 #-- Test python and its packages
 cd tests # pandas is weird
 python3 test_pythonpacks.py
-python3 test_fenics.py
 cd ..
 #-- Test the compilers with a simple print program  
 gcc tests/test_c.c -o tests/test_c
