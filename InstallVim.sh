@@ -1,13 +1,7 @@
 #!/bin/bash
 
-# Install packages
-apt-get -y update
-apt-get -y upgrade
-apt-get -y dist-upgrade
-apt-get -y install build-essential
+#-- Install the text editor Vim and a couple useful vim plugins. For more plugin installation, see pathogen plugin manager 
 apt-get -y install vim
-apt -y install git-all
-
 # Move header docs
 cp ./*_header.txt ~/Documents
 # Move plugins and pathogen
