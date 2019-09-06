@@ -9,7 +9,7 @@ cp -r ./autoload ~/.vim/
 cp -r ./bundle ~/.vim/
 # Install vim plugins (Require internet access)
 git clone git://github.com/jiangmiao/auto-pairs.git ~/.vim/bundle/auto-pairs
-git cline git://github.com/ervandew/supertab.git ~/.vim/bundle/supertab
+git clone git://github.com/ervandew/supertab.git ~/.vim/bundle/supertab
 git clone https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenter
 # Move vimrc
 cp /.vimrc ~/ 
