@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get install software-properties-commin
+apt-get -y install software-properties-commin
 add-apt-repository ppa:fenics-packages/fenics
-apt-get update
-apt-get install --no-install-recommends fenics
+apt-get -y update
+apt-get -y install --no-install-recommends fenics
