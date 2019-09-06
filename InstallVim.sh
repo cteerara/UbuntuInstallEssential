@@ -3,7 +3,7 @@
 #-- Install the text editor Vim and a couple useful vim plugins. For more plugin installation, see pathogen plugin manager 
 apt-get -y install vim
 # Move header docs
-cp ./*_template.txt ~/Documents
+cp ./templates/*_template.txt ~/Documents
 # Move plugins and pathogen
 cp -r ./autoload ~/.vim/
 # Install vim plugins (Require internet access)
