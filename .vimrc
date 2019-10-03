@@ -5,18 +5,18 @@ set autoindent
 set hlsearch
 
 ""-------- Comment shortkey --------------""
-""--Python
-"autocmd FileType python map <buffer> <C-Y> :s/^/#/<CR>:noh<CR>
-"autocmd FileType python map <buffer> <C-T> :s/#//<CR>:noh<CR>
-""--Fortran
-"autocmd FileType fortran map <buffer> <C-R> :s/^/!/<CR>:noh<CR>
-"autocmd FileType fortran map <buffer> <C-T> :s/!//<CR>:noh<CR>
-""--c
-"autocmd FileType c map <buffer> <C-R> :s/^/\/\//<CR>:noh<CR>
-"autocmd FileType c map <buffer> <C-T> :s/\/\///<CR>:noh<CR>
-""--cpp
-"autocmd FileType cpp map <buffer> <C-R> :s/^/\/\//<CR>:noh<CR>
-"autocmd FileType cpp map <buffer> <C-T> :s/\/\///<CR>:noh<CR>
+"--Python
+autocmd FileType python map <buffer> <C-Y> :s/^/#/<CR>:noh<CR>
+autocmd FileType python map <buffer> <C-T> :s/#//<CR>:noh<CR>
+"--Fortran
+autocmd FileType fortran map <buffer> <C-Y> :s/^/!/<CR>:noh<CR>
+autocmd FileType fortran map <buffer> <C-T> :s/!//<CR>:noh<CR>
+"--c
+autocmd FileType c map <buffer> <C-Y> :s/^/\/\//<CR>:noh<CR>
+autocmd FileType c map <buffer> <C-T> :s/\/\///<CR>:noh<CR>
+"--cpp
+autocmd FileType cpp map <buffer> <C-Y> :s/^/\/\//<CR>:noh<CR>
+autocmd FileType cpp map <buffer> <C-T> :s/\/\///<CR>:noh<CR>
 
 
 "-------- New File Headers --------------""
