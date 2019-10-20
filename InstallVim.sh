@@ -1,7 +1,7 @@
 #!/bin/bash
 cwd=$(readlink -f .)
 echo $cwd
-haii
+apt install -y npm
 #-- Install the text editor Vim and a couple useful vim plugins. For more plugin installation, see pathogen plugin manager 
 apt-get -y install vim
 # Move header docs
