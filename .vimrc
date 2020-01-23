@@ -32,7 +32,8 @@ noremap <C-o> :set list!<CR>
 set listchars=tab:>-
 set listchars+=space:␣
 set listchars+=eol:$
-colorscheme slate
+colorscheme delek
+noremap <C-b> l   
 
 "-------- Language Specific Hotkeys -------""
 "--Python
