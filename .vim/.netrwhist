@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/cteerara/Desktop/Fenics/fenics-unsteady-ns/FIS_400k_3kNt'
+let g:netrw_dirhist_2='/home/cteerara/Desktop/Fenics/Stentnosis3D/FIS_Steady'
+let g:netrw_dirhist_3='/home/cteerara/Desktop/Fictitious-Domain-Dev/inputs'
+let g:netrw_dirhist_4='/home/cteerara/Desktop/test_codes/pytest/tests'
+let g:netrw_dirhist_5='/home/cteerara/Desktop/test_codes/pytest/.pytest_cache'

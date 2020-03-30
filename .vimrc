@@ -39,23 +39,23 @@ noremap <C-b> l
 "--Python
 autocmd FileType python map <buffer> <C-n> :/#<CR>:noh<CR>
 autocmd FileType python map <buffer> <C-m> :?#<CR>:noh<CR>
-autocmd FileType python map <buffer> <C-R> :s/^/#/<CR>:noh<CR>
-autocmd FileType python map <buffer> <C-T> :s/#//<CR>:noh<CR>
+" autocmd FileType python map <buffer> <C-R> :s/^/#/<CR>:noh<CR>
+" autocmd FileType python map <buffer> <C-T> :s/#//<CR>:noh<CR>
 "--c
 autocmd FileType c map <buffer> <C-n> :/\/\/<CR>:noh<CR>
 autocmd FileType c map <buffer> <C-m> :?\/\/<CR>:noh<CR>
-autocmd FileType c map <buffer> <C-R> :s/^/\/\//<CR>:noh<CR>
-autocmd FileType c map <buffer> <C-T> :s/\/\///<CR>:noh<CR>
+" autocmd FileType c map <buffer> <C-R> :s/^/\/\//<CR>:noh<CR>
+" autocmd FileType c map <buffer> <C-T> :s/\/\///<CR>:noh<CR>
 "--cpp
 autocmd FileType cpp map <buffer> <C-n> :/\/\/<CR>:noh<CR>
 autocmd FileType cpp map <buffer> <C-m> :?\/\/<CR>:noh<CR>
-autocmd FileType cpp map <buffer> <C-R> :s/^/\/\//<CR>:noh<CR>
-autocmd FileType cpp map <buffer> <C-T> :s/\/\///<CR>:noh<CR>
+" autocmd FileType cpp map <buffer> <C-R> :s/^/\/\//<CR>:noh<CR>
+" autocmd FileType cpp map <buffer> <C-T> :s/\/\///<CR>:noh<CR>
 "--Fortran
 autocmd FileType fortran map <buffer> <C-n> :/!<CR>:noh<CR>
 autocmd FileType fortran map <buffer> <C-m> :?!<CR>:noh<CR>
-autocmd FileType fortran map <buffer> <C-R> :s/^/!/<CR>:noh<CR>
-autocmd FileType fortran map <buffer> <C-T> :s/!//<CR>:noh<CR>
+" autocmd FileType fortran map <buffer> <C-R> :s/^/!/<CR>:noh<CR>
+" autocmd FileType fortran map <buffer> <C-T> :s/!//<CR>:noh<CR>
 "--bash
 autocmd FileType sh map <buffer> <C-n> :/#<CR>:noh<CR>
 autocmd FileType sh map <buffer> <C-m> :?#<CR>:noh<CR>
@@ -65,13 +65,13 @@ autocmd FileType sh map <buffer> <C-T> :s/#//<CR>:noh<CR>
 
 "-------- New File Headers --------------""
 "Create tex file header
-autocmd bufnewfile *.tex so ~/Documents/tex_header.txt 
+autocmd bufnewfile *.tex so ~/Documents/tex_template.txt 
 
 "Create c file header
-autocmd bufnewfile *.c so ~/Documents/c_header.txt
+autocmd bufnewfile *.c so ~/Documents/c_template.txt
 
 "Create c++ file header
-autocmd bufnewfile *.cpp so ~/Documents/cpp_header.txt
+autocmd bufnewfile *.cpp so ~/Documents/cpp_template.txt
 
 " Return to previous location when reopening a file
 if has("autocmd")
@@ -92,5 +92,10 @@ map <buffer> <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-
+set number relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,focusLost,InsertEnter   * set norelativenumber
+augroup END
 
